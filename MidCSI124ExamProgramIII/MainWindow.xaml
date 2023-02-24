@@ -1,0 +1,28 @@
+﻿<Window x:Name="GalaxyCawLatte" x:Class="MidCSI124ExamProgramIII.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MidCSI124ExamProgramIII"
+        mc:Ignorable="d"
+        Title="Galaxy Caw Latte" Height="367" Width="654">
+    <Canvas Margin="0,0,10,3" Background="#FF69BDB4">
+        <RichTextBox x:Name="RIichTextBox" Height="210" Width="141" Canvas.Top="37" Canvas.Left="19">
+            <FlowDocument>
+                <Paragraph>
+                    <Run Text="RichTextBox"/>
+                </Paragraph>
+            </FlowDocument>
+        </RichTextBox>
+        <ListBox x:Name="lbDisplay1" Height="245" Width="168" d:ItemsSource="{d:SampleData ItemCount=5}" Canvas.Left="174" Canvas.Top="55"/>
+        <ListBox x:Name="lbDisplay2" Height="208" Width="167" d:ItemsSource="{d:SampleData ItemCount=5}" Canvas.Left="457" Canvas.Top="92"/>
+        <Button x:Name="btnAddNewProduct" Content="Add New Product" Canvas.Left="19" Canvas.Top="261" Width="141" Height="37" FontSize="14" Click="btnAddNewProduct_Click"/>
+        <Button x:Name="btn2BuyProduct" Content="Buy Product" Canvas.Left="355" Canvas.Top="142" Width="88" Height="30" RenderTransformOrigin="0.481,0.289" Click="Button_Click" FontSize="14"/>
+        <Button x:Name="btn3UseProduct" Content="Use Product" Canvas.Left="355" Canvas.Top="209" Width="88" Height="29" FontSize="14"/>
+        <Button x:Name="btn4MemberInfo" Content="Member Information" Canvas.Left="476" Canvas.Top="55" Width="148" FontSize="14" Click="btn4MemberInfo_Click"/>
+        <ComboBox x:Name="ComboBox" Canvas.Left="457" Canvas.Top="19" Width="167"/>
+        <Label Content="Products:" Canvas.Left="214" Canvas.Top="22" Width="96" FontSize="16" Foreground="White"/>
+        <Label Content="Use Product:" Canvas.Left="496" Canvas.Top="305" Width="108" FontSize="14" FontWeight="Normal"/>
+    </Canvas>
+
+</Window>
