@@ -50,8 +50,9 @@ namespace MidCSI124ExamProgramIII
 
         private void btn4MemberInfo_Click(object sender, RoutedEventArgs e)
         {
-           MemberInfofrmation memberInfofrmation = new MemberInfofrmation();
+            MemberInfofrmation memberInfofrmation = new MemberInfofrmation();
             memberInfofrmation.Show();
+
         }
     }
 }

@@ -22,7 +22,7 @@ namespace MidCSI124ExamProgramIII
         
         public MemberInfofrmation()
         {
-            
+            InitializeComponent();
         }
       
 
