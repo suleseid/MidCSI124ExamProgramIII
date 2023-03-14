@@ -17,6 +17,12 @@ namespace MidCSI124ExamProgramIII
         {
             _members = new ObservableCollection<Member>();
             _products = new ObservableCollection<Product>();
+
+            _members.Add(new Gold_Member("Will", "Cram", 123, "12345", "1234"));
+            _members.Add(new Gold_Member("Will", "Cram", 123, "12345", "1234"));
+            _products.Add(new Drinks("Will", 3.87, 123, "12345", "1234"));
+
+
         }
 
 

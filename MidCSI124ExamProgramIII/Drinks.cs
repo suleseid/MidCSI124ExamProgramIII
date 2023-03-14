@@ -9,16 +9,20 @@ namespace MidCSI124ExamProgramIII
     internal class Drinks : Product
     {
         public enum Size { Tall, Venti, Grande, Trenta }
-        Size _drinkSize;
+        double _drinkSize;
 
-        protected Drinks (string name, decimal price, int point, string sku, string numberOfProduct, Size drinkSize) : base(name, price, point, sku, numberOfProduct)
+        public Drinks (string name, decimal price, int point, string sku, string numberOfProduct, double drinkSize) : base(name, price, point, sku, numberOfProduct)
         {
             _drinkSize = _drinkSize;
         }
 
+        public Drinks(string name, decimal price, int point, string sku, string numberOfProduct) : base(name, price, point, sku, numberOfProduct)
+        {
+        }
+
         public Size drinkSize
         {
-            get => _drinkSize;
+            get => drinkSize;
         }
   
         public override string ToString()

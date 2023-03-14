@@ -21,13 +21,12 @@ namespace MidCSI124ExamProgramIII
     /// </summary>
     public partial class MainWindow : Window
     {
-        ObservableCollection<Product> _products;
-        ObservableCollection<Member> _members;
+    
         public MainWindow()
         {
             InitializeComponent();
-            lbDisplay1.ItemsSource = _products;
-            lbDisplay1.ItemsSource = _members;
+            lbDisplay1.ItemsSource = Data.Products;
+            lbDisplay1.ItemsSource = Data.Members;
 
             //_products.Add(new Drinks("Hotlatte", 7, 200, Drinks.Size.Tall, 165.99));//
 
@@ -44,7 +43,7 @@ namespace MidCSI124ExamProgramIII
         }
         private void btnAddNewProduct_Click(object sender, RoutedEventArgs e)
         {
-            AddNewProductWindow addNewProductWindow = new AddNewProductWindow();    
+            AddNewProductWindow addNewProductWindow = new AddNewProductWindow();
             addNewProductWindow.Show();
         }
 
@@ -52,6 +51,11 @@ namespace MidCSI124ExamProgramIII
         {
             MemberInfofrmation memberInfofrmation = new MemberInfofrmation();
             memberInfofrmation.Show();
+
+        }
+
+        private void btn3UseProduct_Click(object sender, RoutedEventArgs e)
+        {
 
         }
     }

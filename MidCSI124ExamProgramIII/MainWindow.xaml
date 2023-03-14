@@ -18,7 +18,7 @@
         <ListBox x:Name="lbDisplay2" Height="208" Width="167" d:ItemsSource="{d:SampleData ItemCount=5}" Canvas.Left="457" Canvas.Top="92"/>
         <Button x:Name="btnAddNewProduct" Content="Add New Product" Canvas.Left="19" Canvas.Top="261" Width="141" Height="37" FontSize="14" Click="btnAddNewProduct_Click"/>
         <Button x:Name="btn2BuyProduct" Content="Buy Product" Canvas.Left="355" Canvas.Top="142" Width="88" Height="30" RenderTransformOrigin="0.481,0.289" Click="Button_Click" FontSize="14"/>
-        <Button x:Name="btn3UseProduct" Content="Use Product" Canvas.Left="355" Canvas.Top="209" Width="88" Height="29" FontSize="14"/>
+        <Button x:Name="btn3UseProduct" Content="Use Product" Canvas.Left="355" Canvas.Top="209" Width="88" Height="29" FontSize="14" Click="btn3UseProduct_Click"/>
         <Button x:Name="btn4MemberInfo" Content="Member Information" Canvas.Left="476" Canvas.Top="55" Width="148" FontSize="14" Click="btn4MemberInfo_Click"/>
         <ComboBox x:Name="ComboBox" Canvas.Left="457" Canvas.Top="19" Width="167"/>
         <Label Content="Products:" Canvas.Left="214" Canvas.Top="22" Width="96" FontSize="16" Foreground="White"/>
